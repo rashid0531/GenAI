@@ -1,0 +1,18 @@
+/opt/homebrew/Caskroom/miniforge/base/envs/genai/bin/python /Users/rashid/workspace/Gen
+AI/summarize_benefit_election/summerize.py
+Traceback (most recent call last):
+  File "/Users/rashid/workspace/GenAI/summarize_benefit_election/summerize.py", line 46, in <module>
+    response = get_completion(prompt)
+  File "/Users/rashid/workspace/GenAI/summarize_benefit_election/summerize.py", line 9, in get_completion
+    response = openai.ChatCompletion.create(
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/genai/lib/python3.10/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/genai/lib/python3.10/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/genai/lib/python3.10/site-packages/openai/api_requestor.py", line 298, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/genai/lib/python3.10/site-packages/openai/api_requestor.py", line 700, in _interpret_response
+    self._interpret_response_line(
+  File "/opt/homebrew/Caskroom/miniforge/base/envs/genai/lib/python3.10/site-packages/openai/api_requestor.py", line 765, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.RateLimitError: You exceeded your current quota, please check your plan and billing details.
