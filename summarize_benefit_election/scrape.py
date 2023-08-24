@@ -10,9 +10,9 @@ def find_nested_paras(beautiful_body_obj):
 
 
 def find_nested_headers(beautiful_body_obj):
-    nested_headers = beautiful_body_obj.find_all("h3")
+    nested_headers = beautiful_body_obj.find("h3", id=re.compile('^a1_9_'))
     if nested_headers:
-        print(nested_headers)
+        print(nested_headers.text)
 
 
 def find_nested_sections(beautiful_body_obj):
